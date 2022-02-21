@@ -55,9 +55,9 @@ function ActivityComponent() {
         </button>
       </section>
       <p>
-        {activities.length == 0 && "Din lista är tom - skriv in en aktivitet i rubriken ovan"}
-        {activities.length > 0 && activitesLeft.length == 0 && `Nu är du färdig med alla saker!`}
-        {activitesLeft.length > 0 && `Du har ${activitesLeft.length} ${activitesLeft.length == 1 ? "sak" : "saker"} kvar på listan att göra`}
+        {activities.length === 0 && "Din lista är tom - skriv in en aktivitet i rubriken ovan"}
+        {activities.length > 0 && activitesLeft.length === 0 && `Nu är du färdig med alla saker!`}
+        {activitesLeft.length > 0 && `Du har ${activitesLeft.length} ${activitesLeft.length === 1 ? "sak" : "saker"} kvar på listan att göra`}
         <div className="deleteAll">
           {activities.length > 0 && "Rensa listan"}
           <button onClick={() => deleteAllActivities()}>
