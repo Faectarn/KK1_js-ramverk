@@ -25,8 +25,13 @@ body {
 }
 
 .add {
+<<<<<<< HEAD
   /* margin-top: 4px; */
   font-size: 30px;
+=======
+  margin-top: 4px;
+  font-size: 40px;
+>>>>>>> 9e767d5625c18f56d992e222e2d7aaf078b01903
   border: none;
   background: transparent;
   cursor: pointer;
@@ -42,7 +47,11 @@ body {
   background-color: transparent;
 }
 
+<<<<<<< HEAD
 input::placeholder {
+=======
+input::placeholder{
+>>>>>>> 9e767d5625c18f56d992e222e2d7aaf078b01903
   color: black;
 }
 
@@ -57,6 +66,7 @@ p {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .info {
   display: flex;
   justify-content: space-between;
@@ -64,6 +74,8 @@ p {
   font-size: 20px;
 }
 
+=======
+>>>>>>> 9e767d5625c18f56d992e222e2d7aaf078b01903
 .deleteAll {
   font-size: 20px;
   margin-bottom: 20px;
@@ -121,6 +133,7 @@ p {
   transform: scale(1.2);
 }
 
+<<<<<<< HEAD
 @media (max-width: 900px) {
   .list {
     margin: 0 0 0 -80px;
@@ -146,3 +159,24 @@ p {
     margin-bottom: 19px;
   }
 }
+=======
+  @media (max-width: 900px) {
+    .list {
+      margin:0 0 0 -80px;
+      padding: 0 25px 0 116px;
+      background-size: contain;
+    }
+
+    body {
+      padding: 0;
+    }
+
+    .top {
+      margin-bottom: 2px;
+    }
+
+    .setActivity {
+      margin-bottom: -5px;
+    }
+  }
+>>>>>>> 9e767d5625c18f56d992e222e2d7aaf078b01903
