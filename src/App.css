@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+body {
+  height: 100vh;
+  background-image: url("https://www.ikea.com/cz/en/images/products/varda-wood-stain-outdoor-use-colourless__0912015_pe617613_s5.jpg");
+  background-size: cover;
+  padding-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list {
+  max-width: 45em;
+  height: 52em;
+  margin: 0 auto;
+  padding: 30px 60px 1px 134px;
+  font-family: 'Caveat';
+  background-image: url("./components/paper.jpg");
+  background-size: cover;
+  overflow-y: auto;
+  box-shadow: 8px 7px 5px rgb(73, 73, 73);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top {
   display: flex;
-  flex-direction: column;
+  padding-left: 10px;
+}
+
+.add {
+  /* margin-top: 4px; */
+  font-size: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.inputField {
+  margin: 15px 10px 10px -30px;
+  font-size: 24px;
+  width: 100%;
+  border-width: 0 0 0 3px;
+  padding: 0 0 3px 10px;
+  font-family: 'Caveat';
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+p {
+  margin: 10px 10px 0 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 11px 11px 0px 0;
+  font-size: 20px;
+}
+
+.deleteAll {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: transparent;
+  margin-right: -10px;
+}
+
+.deleteAll button {
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.deleteAll:hover {
+  color: black;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.setActivity {
+  margin-bottom: 20px;
+  margin-right: 5px;
+  display: flex;
   align-items: center;
+  font-size: 26px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 33%;
+  margin-right: 10px;
+  cursor: pointer;
+  background: transparent;
+  font-size: 32px;
+  color: green;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.delete {
+  width: 28px;
+  border: none;
+  margin-left: auto;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.delete:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  .list {
+    margin: 0 0 0 -80px;
+    padding: 0 5px 0 100px;
+    background-size: contain;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    padding: 0;
+  }
+
+  .top {
+    margin-bottom: 2px;
+  }
+
+  .info {
+    display: flex;
+    margin-top: 12px;
+    font-size: 17px;
+  }
+
+  .setActivity {
+    margin-bottom: 19px;
   }
 }
